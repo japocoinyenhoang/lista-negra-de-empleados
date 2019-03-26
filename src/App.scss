@@ -1,0 +1,59 @@
+/* APP */
+.app{
+    margin: 0 3em;
+    padding: 0 0 3em;
+}
+.app__title{
+    background: black;
+    margin: 0 0 32px;
+    padding: 10px 20 px;
+    text-align: center;
+    color: white;
+}
+
+/* List */
+.app__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.app__list-item{
+    & + .app__list-item{
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #d4d4d4;
+    }
+}
+
+/* Criaturas */
+.person{
+    position: relative;
+    padding-left: 92px;
+    min-height: 72px;
+
+}
+.person__image{
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+
+}
+.person__name{
+    text-transform: capitalize;
+    font-size: 22px;
+    margin: 0 0 10px;
+
+}
+.person__age, .person__city{
+    display: inline;
+    font-size: 16px;
+
+}
+.person__age{
+    &::after {
+        content: ',';
+        padding-right: 0.3rem;
+
+    }
+}
